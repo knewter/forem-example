@@ -1,5 +1,13 @@
+$light-bg1: #eee;
+$bar1-topbg: #eee;
+$bar1-midbg: #bbb;
+$bar1-bottombg: #aaa;
+$lighter-text: #777;
+$default-text: #000;
+
 body{
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  color: $default-text;
 }
 #posts{
   .post{
@@ -32,5 +40,32 @@ body{
 }
 
 .even{
-  background-color: #eee;
+  background-color: $light-bg1;
+}
+
+table.topics{
+  width: 100%;
+  thead{
+    th{
+      padding: .5em 0;
+      background-color: $bar1-midbg;
+    }
+  }
+  tbody{
+    .subject{
+      a{
+        text-decoration: none;
+        &:visited{
+          color: $default-text;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .started-by{
+      font-size: .7em;
+      color: $lighter-text;
+    }
+  }
 }
