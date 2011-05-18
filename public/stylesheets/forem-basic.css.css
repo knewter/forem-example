@@ -1,0 +1,128 @@
+/* line 8, ../../app/assets/stylesheets/forem-basic.css.scss */
+body {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  color: black;
+}
+
+/* line 14, ../../app/assets/stylesheets/forem-basic.css.scss */
+#forum h2 {
+  margin-bottom: 0;
+}
+/* line 16, ../../app/assets/stylesheets/forem-basic.css.scss */
+#forum h2 a {
+  text-decoration: none;
+  color: black;
+}
+/* line 21, ../../app/assets/stylesheets/forem-basic.css.scss */
+#forum .description {
+  color: #777777;
+  font-style: oblique;
+}
+/* line 25, ../../app/assets/stylesheets/forem-basic.css.scss */
+#forum menu {
+  background-color: #bbbbbb;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 29, ../../app/assets/stylesheets/forem-basic.css.scss */
+#forum menu a {
+  padding: .5em;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+/* line 34, ../../app/assets/stylesheets/forem-basic.css.scss */
+#forum menu a:hover {
+  background-color: #aaaaaa;
+}
+
+/* line 43, ../../app/assets/stylesheets/forem-basic.css.scss */
+#topic h2 {
+  padding: .5em;
+  position: relative;
+}
+/* line 46, ../../app/assets/stylesheets/forem-basic.css.scss */
+#topic h2 a {
+  position: absolute;
+  right: 0;
+  padding: .5em;
+}
+
+/* line 56, ../../app/assets/stylesheets/forem-basic.css.scss */
+#posts .post .user {
+  font-size: .75em;
+  width: 140px;
+  display: inline-block;
+}
+/* line 60, ../../app/assets/stylesheets/forem-basic.css.scss */
+#posts .post .user .username {
+  font-weight: bold;
+}
+/* line 63, ../../app/assets/stylesheets/forem-basic.css.scss */
+#posts .post .user .icon {
+  background: transparent url(http://placekitten.com/50/50) no-repeat;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+/* line 69, ../../app/assets/stylesheets/forem-basic.css.scss */
+#posts .post .user .member-for {
+  width: 80px;
+  display: inline-block;
+}
+/* line 74, ../../app/assets/stylesheets/forem-basic.css.scss */
+#posts .post .text {
+  display: inline-block;
+}
+/* line 77, ../../app/assets/stylesheets/forem-basic.css.scss */
+#posts .post .actions {
+  width: 100px;
+  display: inline-block;
+}
+
+/* line 84, ../../app/assets/stylesheets/forem-basic.css.scss */
+.even {
+  background-color: #eeeeee;
+}
+
+/* line 88, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics {
+  width: 100%;
+}
+/* line 90, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics td, table.topics th {
+  padding: .5em;
+}
+/* line 94, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics thead th {
+  background-color: #bbbbbb;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 102, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics tbody .subject a {
+  text-decoration: none;
+}
+/* line 104, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics tbody .subject a:visited {
+  color: black;
+}
+/* line 107, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics tbody .subject a:hover {
+  text-decoration: underline;
+}
+/* line 112, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics tbody .started-by {
+  font-size: .7em;
+  color: #777777;
+}
+/* line 116, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics tbody .latest-post {
+  font-size: .7em;
+  width: 80px;
+}
+/* line 120, ../../app/assets/stylesheets/forem-basic.css.scss */
+table.topics tbody .posts-count, table.topics tbody .views-count {
+  width: 80px;
+}

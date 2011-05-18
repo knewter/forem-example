@@ -9,6 +9,48 @@ body{
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
   color: $default-text;
 }
+
+#forum{
+  h2{
+    margin-bottom: 0;
+    a{
+      text-decoration: none;
+      color: $default-text;
+    }
+  }
+  .description{
+    color: $lighter-text;
+    font-style: oblique;
+  }
+  menu{
+    background-color: $bar1-midbg;
+    margin-left: 0;
+    padding-left: 0;
+    a{
+      padding: .5em;
+      display: inline-block;
+      color: $default-text;
+      text-decoration: none;
+      &:hover{
+        background-color: $bar1-bottombg;
+      }
+      margin: 0;
+    }
+  }
+}
+
+#topic{
+  h2{
+    padding: .5em;
+    position: relative;
+    a{
+      position: absolute;
+      right: 0;
+      padding: .5em;
+    }
+  }
+}
+
 #posts{
   .post{
     .user{
@@ -45,10 +87,14 @@ body{
 
 table.topics{
   width: 100%;
+  td, th{
+    padding: .5em;
+  }
   thead{
     th{
-      padding: .5em 0;
       background-color: $bar1-midbg;
+      font-weight: normal;
+      text-align: left;
     }
   }
   tbody{
@@ -66,6 +112,13 @@ table.topics{
     .started-by{
       font-size: .7em;
       color: $lighter-text;
+    }
+    .latest-post{
+      font-size: .7em;
+      width: 80px;
+    }
+    .posts-count, .views-count{
+      width: 80px;
     }
   }
 }

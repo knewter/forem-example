@@ -3,6 +3,8 @@ ForemExample::Application.routes.draw do
 
   resources :sessions
 
+  match 'sign_in' => 'sessions#new'
+
   root :to => 'forem/forums#index'
 
   # The priority is based upon order of creation:
