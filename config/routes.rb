@@ -1,4 +1,10 @@
 ForemExample::Application.routes.draw do
+  mount Forem::Engine, :at => "forem"
+
+  resources :sessions
+
+  root :to => 'forem/forums#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
