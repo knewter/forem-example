@@ -1,0 +1,36 @@
+body{
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+#posts{
+  .post{
+    .user{
+      font-size: .75em;
+      width: 140px;
+      display: inline-block;
+      .username{
+        font-weight: bold;
+      }
+      .icon{
+        background: transparent url(http://placekitten.com/50/50) no-repeat;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+      }
+      .member-for{
+        width: 80px;
+        display: inline-block;
+      }
+    }
+    .text{
+      display: inline-block;
+    }
+    .actions{
+      width: 100px;
+      display: inline-block;
+    }
+  }
+}
+
+.even{
+  background-color: #eee;
+}
