@@ -75,6 +75,7 @@ body{
       font-size: .75em;
       width: 140px;
       display: inline-block;
+      padding: .5em 1em;
       .username{
         font-weight: bold;
       }
@@ -104,7 +105,11 @@ body{
       .text{
         margin-right: 100px;
       }
+      &:hover .actions{
+        display: block;
+      }
       .actions{
+        display: none;
         position: absolute;
         right: 10px;
         bottom: 0;
