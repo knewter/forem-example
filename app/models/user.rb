@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
 
   validates_confirmation_of :password, :on => :create, :message => "should match confirmation"
 
+  has_many :posts, :class_name => 'Forem::Post'
+
   def to_s
     email
   end
