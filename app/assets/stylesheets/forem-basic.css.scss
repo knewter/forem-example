@@ -4,6 +4,8 @@ $bar1-midbg: #bbb;
 $bar1-bottombg: #aaa;
 $lighter-text: #777;
 $default-text: #000;
+$darkbg: #333;
+$darkbg-highlight: #222;
 
 body{
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
@@ -43,17 +45,30 @@ body{
   h2{
     padding: .5em;
     position: relative;
+    background-color: $darkbg;
+    color: white;
     a{
+      margin-right: 1em;
+      font-weight: normal;
       position: absolute;
       right: 0;
       padding: .5em;
+      background-color: #fff;
+      font-size: .5em;
+      text-decoration: none;
+      &:hover{
+        background-color: $light-bg1;
+      }
     }
   }
 }
 
 #posts{
   .post{
+    clear: both;
+    position: relative;
     .user{
+      float: left;
       font-size: .75em;
       width: 140px;
       display: inline-block;
@@ -71,10 +86,17 @@ body{
         display: inline-block;
       }
     }
+    .contents{
+      margin-left: 160px;
+      min-height: 100px;
+    }
     .text{
       display: inline-block;
     }
     .actions{
+      position: absolute;
+      right: 10px;
+      bottom: 25px;
       width: 100px;
       display: inline-block;
     }
@@ -118,6 +140,7 @@ table.topics{
       width: 80px;
     }
     .posts-count, .views-count{
+      font-size: .8em;
       width: 80px;
     }
   }
