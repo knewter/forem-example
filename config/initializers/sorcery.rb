@@ -35,17 +35,17 @@ Rails.application.config.sorcery.configure do |config|
   # --- user config ---
   config.user_config do |user|
     # -- core --
-    # user.username_attribute_name = :username                                        # change default username attribute, for example, to use :email as the login.
-    # user.password_attribute_name = :password                                        # change *virtual* password attribute, the one which is used until an encrypted one is generated.
-    # user.email_attribute_name = :email                                              # change default email attribute.
-    # user.crypted_password_attribute_name =  :crypted_password                       # change default crypted_password attribute.
-    # user.salt_join_token = ""                                                       # what pattern to use to join the password with the salt
-    # user.salt_attribute_name = :salt                                                # change default salt attribute.
-    # user.stretches = nil                                                            # how many times to apply encryption to the password.
-    # user.encryption_key = nil                                                       # encryption key used to encrypt reversible encryptions such as AES256.
-    # user.custom_encryption_provider = nil                                           # use an external encryption class.
-    # user.encryption_algorithm = :bcrypt                                             # encryption algorithm name. See 'encryption_algorithm=' for available options.
-    # user.subclasses_inherit_config = false                                          # make this configuration inheritable for subclasses. Useful for ActiveRecord's STI.
+    user.username_attribute_name = :username                                        # change default username attribute, for example, to use :email as the login.
+    user.password_attribute_name = :password                                        # change *virtual* password attribute, the one which is used until an encrypted one is generated.
+    user.email_attribute_name = :email                                              # change default email attribute.
+    user.crypted_password_attribute_name =  :crypted_password                       # change default crypted_password attribute.
+    user.salt_join_token = ""                                                       # what pattern to use to join the password with the salt
+    user.salt_attribute_name = :salt                                                # change default salt attribute.
+    user.stretches = nil                                                            # how many times to apply encryption to the password.
+    user.encryption_key = nil                                                       # encryption key used to encrypt reversible encryptions such as AES256.
+    user.custom_encryption_provider = nil                                           # use an external encryption class.
+    user.encryption_algorithm = :bcrypt                                             # encryption algorithm name. See 'encryption_algorithm=' for available options.
+    user.subclasses_inherit_config = false                                          # make this configuration inheritable for subclasses. Useful for ActiveRecord's STI.
                                                                                       
     # -- user_activation --                                                           
     # user.activation_state_attribute_name = :activation_state                        # the attribute name to hold activation state (active/pending).
