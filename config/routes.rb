@@ -1,11 +1,12 @@
 ForemExample::Application.routes.draw do
   mount Forem::Engine, :at => "forem"
+  root :to => 'forem/forums#index'
 
   resources :sessions
-
   match 'sign_in' => 'sessions#new'
+  match 'sign_out' => 'sessions#destroy'
 
-  root :to => 'forem/forums#index'
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,6 +7,6 @@ class User < ActiveRecord::Base
   has_many :posts, :class_name => 'Forem::Post'
 
   def to_s
-    email
+    username
   end
 end

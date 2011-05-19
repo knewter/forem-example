@@ -187,3 +187,19 @@ table.topics{
     }
   }
 }
+
+.pages{
+  .page{
+    display: inline-block;
+    padding: .25em;
+    &.current{
+      background-color: $light-bg1;
+    }
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
