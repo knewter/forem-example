@@ -5,6 +5,7 @@ $bar1-topbg: #eee;
 $bar1-midbg: #bbb;
 $bar1-bottombg: #aaa;
 $lighter-text: #777;
+$visited-text: #333;
 $default-text: #000;
 $darkbg: #333;
 $darkbg-highlight: #222;
@@ -143,8 +144,17 @@ body{
   background-color: $light-bg1;
 }
 
-table.topics{
+table.subdued{
   width: 100%;
+  a{
+    text-decoration: none;
+    &:visited{
+      color: $visited-text;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
   td, th{
     padding: .5em;
   }
@@ -156,16 +166,8 @@ table.topics{
     }
   }
   tbody{
+    color: $lighter-text;
     .subject{
-      a{
-        text-decoration: none;
-        &:visited{
-          color: $default-text;
-        }
-        &:hover{
-          text-decoration: underline;
-        }
-      }
     }
     .started-by{
       font-size: .7em;
