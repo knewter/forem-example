@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
-  has_secure_password
-  validates :password, :presence => { :on => :create }
+  attr_accessible :email, :password, :password_confirmation
+  authenticates_with_sorcery!
+
+  validates_confirmation_of :password, :on => :create, :message => "should match confirmation"
 
   def to_s
     email

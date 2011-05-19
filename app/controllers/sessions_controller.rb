@@ -6,15 +6,19 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if user = User.find_by_email(params[:user][:email]).try(:authenticate, params[:user][:password])
-      session[:user_id] = user.id
-      redirect_to root_path # Or whatever you want i.e. redirect_to user
-    else
-      render :new, :flash => { :error => "bad email/password combination" }
+    respond_to do |format|
+      if @user = login(params[:username],params[:password])
+        format.html { redirect_back_or_to(root_path, :notice => 'Login successful.') }
+        format.xml { render :xml => @user, :status => :created, :location => @user }
+      else
+        format.html { flash.now[:alert] = "Login failed."; render :action => "new" }
+        format.xml { render :xml => @user.errors, :status => :unprocessable_entity }
+      end
     end
   end
 
-  def delete
-    session.delete(:user_id)
+  def destroy
+    logout
+    redirect_to(root_path, :notice => 'Logged out!')
   end
 end

@@ -6,6 +6,8 @@ gem 'rack', :git => "git://github.com/rack/rack.git"
 #gem 'forem', :git => "git://github.com/isotope11/forem.git"
 gem 'forem', :path => '/home/jadams/rails/forem'
 
+gem 'sorcery'
+
 gem 'sqlite3'
 
 # Asset template engines

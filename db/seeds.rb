@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Daley', city: cities.first)
 
-user = User.create(:email => 'test@test.com', :password => 'forem', :password_confirmation => 'forem')
+user = User.create(:email => 'test@test.com', :password => 'forem', :password_confirmation => 'forem', :username => 'testuser')
 
 first_forum = Forem::Forum.create(:title => 'First test forum', :description => 'A test forum, for testing with.')
 first_topic = first_forum.topics.new(:subject => 'A test topic')

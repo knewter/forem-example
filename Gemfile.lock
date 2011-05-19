@@ -50,6 +50,7 @@ GEM
       activesupport (= 3.1.0.beta1)
     activesupport (3.1.0.beta1)
       multi_json (~> 1.0)
+    addressable (2.2.6)
     ansi (1.2.5)
     archive-tar-minitar (0.5.2)
     bcrypt-ruby (2.1.4)
@@ -62,6 +63,10 @@ GEM
     erubis (2.7.0)
     execjs (0.4.0)
       multi_json (~> 1.0)
+    faraday (0.6.1)
+      addressable (~> 2.2.4)
+      multipart-post (~> 1.1.0)
+      rack (>= 1.1.0, < 2)
     haml (3.1.1)
     hike (1.0.0)
     i18n (0.6.0beta1)
@@ -78,6 +83,11 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.2)
+    multipart-post (1.1.1)
+    oauth (0.4.4)
+    oauth2 (0.4.1)
+      faraday (~> 0.6.1)
+      multi_json (>= 0.0.5)
     polyglot (0.3.1)
     rack-cache (1.0.2)
       rack (>= 0.4)
@@ -114,6 +124,12 @@ GEM
       archive-tar-minitar (>= 0.5.2)
     sass (3.1.1)
     simple_form (1.4.0)
+    sorcery (0.5.1)
+      bcrypt-ruby (~> 2.1.4)
+      oauth (>= 0.4.4)
+      oauth (>= 0.4.4)
+      oauth2 (>= 0.1.1)
+      oauth2 (>= 0.1.1)
     sprockets (2.0.0.beta.2)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -143,6 +159,7 @@ DEPENDENCIES
   rails (= 3.1.0.beta1)
   ruby-debug19
   sass
+  sorcery
   sprockets (= 2.0.0.beta.2)
   sqlite3
   turn
